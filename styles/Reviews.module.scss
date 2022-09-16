@@ -1,0 +1,84 @@
+.art_quick_reviews {
+    margin-top: 3em;
+
+    .art_rev_header {
+        padding: 0 10px;
+        text-align: center;
+
+        .art_title {
+            text-align: center;
+        }
+
+        .art_rev_title {
+            transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+            -webkit-transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+            -moz-transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+            -ms-transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+            -o-transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+            position: relative;
+            width: 100%;
+            text-transform: capitalize;
+        }
+    }
+
+    .art_reviews {
+        // display: -webkit-box;
+        // display: -ms-flexbox;
+        // display: flex;
+        // -ms-flex-wrap: wrap;
+        // flex-wrap: wrap;
+        // -webkit-box-pack: justify;
+        // -ms-flex-pack: justify;
+        // justify-content: space-between;
+        margin:  0;
+
+        .art_rev_card {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            width: (100% ) - 10;
+            position: relative;
+            background-color: #fff;
+            border-radius: 8px;
+            margin-top: 1em;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+            -webkit-transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+            -moz-transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+            -ms-transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+            -o-transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+            box-shadow: 0 0 1px 1px rgba(107, 156, 212, 0.2);
+
+            &:hover {
+
+                -webkit-box-shadow: 0 0 16px 9px rgba(107, 156, 212, 0.2);
+                box-shadow: 0 0 16px 9px rgba(107, 156, 212, 0.2);
+                transform: scale(1.04);
+                -webkit-transform: scale(1.04);
+                -moz-transform: scale(1.04);
+                -ms-transform: scale(1.04);
+                -o-transform: scale(1.04);
+                z-index: 1;
+            }
+
+            .art_img_co {
+                width: 90px;
+                min-height: 90px;
+                border-radius: 5em;
+                overflow: hidden;
+                margin: -50px auto 0;
+                border: 7px solid #fff;
+                box-shadow: 0 3px 4px rgba(123, 142, 163, 0.49);
+            }
+
+            .art_rev_content {
+                padding: 0 10px;
+            }
+        }
+    }
+}

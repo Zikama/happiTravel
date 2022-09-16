@@ -1,0 +1,288 @@
+[
+    {
+        "name": "Home",
+        "link": "/",
+        "icon": "Home",
+        "is_multiple": false,
+        "menu": []
+    },
+    {
+        "name": "About us",
+        "link": "/about-us",
+        "icon": "About",
+        "is_multiple": false,
+        "menu": []
+    },
+    {
+        "name": "Apply Visa",
+        "link": "",
+        "icon": "Globe",
+        "is_multiple": true,
+        "menu": [
+            {
+                "description": "Canada Visa",
+                "menu": [
+                    {
+                        "name": "Immigrate to Canada",
+                        "link": "/visa/canada/immigrate"
+                    },
+                    {
+                        "name": "Study in Canada",
+                        "link": "/visa/canada/study"
+                    },
+                    {
+                        "name": "Working in Canada",
+                        "link": "/visa/canada/work"
+                    },
+                    {
+                        "name": "Run Business in Canada",
+                        "link": "/visa/canada/business"
+                    },
+                    {
+                        "name": "Family class sponsorship",
+                        "link": "/visa/canada/family"
+                    }
+                ]
+            },
+            {
+                "description": "USA Visa",
+                "menu": [
+                    {
+                        "name": "Business Visa",
+                        "link": "/visa/canada/immigrate"
+                    },
+                    {
+                        "name": "Tourist Visa",
+                        "link": "/visa/canada/study"
+                    },
+                    {
+                        "name": "Work Visa",
+                        "link": "/visa/canada/work"
+                    },
+                    {
+                        "name": "Visitor Visa",
+                        "link": "/visa/canada/business"
+                    },
+                    {
+                        "name": "Green Card",
+                        "link": "/visa/canada/family"
+                    },
+                    {
+                        "name": "Study in USA",
+                        "link": "/visa/canada/family"
+                    },
+                    {
+                        "name": "US Citizenship",
+                        "link": "/visa/canada/family"
+                    }
+                ]
+            },
+            {
+                "description": "Schengen Visa",
+                "menu": [
+                    {
+                        "name": "Tourist Visa",
+                        "link": "/visa/canada/study"
+                    },
+                    {
+                        "name": "Visit",
+                        "link": "/visa/canada/business"
+                    },
+                    {
+                        "name": "Business",
+                        "link": "/visa/canada/work"
+                    },
+                    {
+                        "name": "Work",
+                        "link": "/visa/canada/family"
+                    },
+                    {
+                        "name": "Immigration",
+                        "link": "/visa/canada/family"
+                    },
+                    {
+                        "name": "Study",
+                        "link": "/visa/canada/family"
+                    },
+                    {
+                        "name": "Medical",
+                        "link": "/visa/canada/family"
+                    }
+                ]
+            },
+            {
+                "description": "China Visa",
+                "menu": [
+                    {
+                        "name": "Tourist Visa",
+                        "link": "/visa/canada/study"
+                    },
+                    {
+                        "name": "Work Visa",
+                        "link": "/visa/canada/business"
+                    },
+                    {
+                        "name": "Private Visa",
+                        "link": "/visa/canada/work"
+                    },
+                    {
+                        "name": "Family Reunion",
+                        "link": "/visa/canada/family"
+                    },
+                    {
+                        "name": "Business Visa",
+                        "link": "/visa/canada/family"
+                    },
+                    {
+                        "name": "Study",
+                        "link": "/visa/canada/family"
+                    },
+                    {
+                        "name": "Transit",
+                        "link": "/visa/canada/family"
+                    }
+                ]
+            },
+            {
+                "description": "Australia Visa",
+                "menu": [
+                    {
+                        "name": "Visit",
+                        "link": "/visa/canada/study"
+                    },
+                    {
+                        "name": "Study in Australia",
+                        "link": "/visa/canada/business"
+                    },
+                    {
+                        "name": "Work in Australia",
+                        "link": "/visa/canada/work"
+                    },
+                    {
+                        "name": "Family",
+                        "link": "/visa/canada/family"
+                    },
+                    {
+                        "name": "Business in Australia",
+                        "link": "/visa/canada/family"
+                    },
+                    {
+                        "name": "Employer",
+                        "link": "/visa/canada/family"
+                    }
+                ]
+            },
+            {
+                "description": "UK Visa",
+                "menu": [
+                    {
+                        "name": "Visit",
+                        "link": "/visa/canada/study"
+                    },
+                    {
+                        "name": "Family Visa",
+                        "link": "/visa/canada/family"
+                    },
+                    {
+                        "name": "Settlement",
+                        "link": "/visa/canada/family"
+                    },
+                    {
+                        "name": "Study in UK",
+                        "link": "/visa/canada/family"
+                    }
+                ]
+            },
+            {
+                "description": "Japan Visa",
+                "menu": [
+                    {
+                        "name": "Japan Working Holiday Visa",
+                        "link": "/visa/canada/study"
+                    },
+                    {
+                        "name": "Highly Skilled Worker's Visa for Japan",
+                        "link": "/visa/canada/family"
+                    },
+                    {
+                        "name": "Japan Spouse Visa",
+                        "link": "/visa/canada/family"
+                    },
+                    {
+                        "name": "Japan Student Visa",
+                        "link": "/visa/canada/family"
+                    },
+                    {
+                        "name": "Japan Work Visa Application and Requirements",
+                        "link": "/visa/canada/family"
+                    },
+                    {
+                        "name": "Japan Transit Visa",
+                        "link": "/visa/canada/family"
+                    },
+                    {
+                        "name": "Japan Tourist Visa Application and Requirements",
+                        "link": "/visa/canada/family"
+                    },
+                    {
+                        "name": "Japan Certificate of Eligibility",
+                        "link": "/visa/canada/family"
+                    },
+                    {
+                        "name": "Japan Visa Extension",
+                        "link": "/visa/canada/family"
+                    },
+                    {
+                        "name": "Who Needs a Visa for Japan?",
+                        "link": "/visa/canada/family"
+                    }
+                ]
+            },
+            {
+                "description": "Study Abroad",
+                "menu": [
+                    {
+                        "name": "Study in Malaysia",
+                        "link": "/visa/canada/study"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Travel",
+        "link": "/travel",
+        "icon": "Travel",
+        "is_multiple": false,
+        "menu": [
+            {
+                "description": "",
+                "menu": [
+                    {
+                        "name": "Au-pair German",
+                        "link": "/au-pair-german"
+                    },
+                    {
+                        "name": "DV Program",
+                        "link": "/dv-program"
+                    },
+                    {
+                        "name": "Ticketing",
+                        "link": "/ticketing"
+                    },
+                    {
+                        "name": "Flight Itinerary, Hotel & Insurance Booking",
+                        "link": "/bookings"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Visa assessment",
+        "link": "/applications/visa-assessment",
+        "icon": "Assessment",
+        "is_multiple": false,
+        "menu": []
+    }
+]

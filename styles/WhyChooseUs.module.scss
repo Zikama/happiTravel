@@ -1,0 +1,52 @@
+.art_sec {
+    background: url("../public/assets/img/brazcom/Uganda-Airlines-Economy-Class-2.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 80vh;
+    padding: 0;
+    margin: 3em 0 0;
+    .art_choose_us_co {
+        background-color: #020314;
+        color: #fff;
+        width: 50%;
+        min-height: inherit;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        padding: 20px 10px;
+        .art_title {
+            text-align: center;
+            width: 100%;
+            * {
+                margin-top: 0;
+            }
+        }
+        .art_choose_us_lists {
+            margin: 0;
+            width: 90%;
+            .art_choose_us_list{
+                list-style: none;
+                margin-top: 30px;
+                position: relative;
+                &::before {
+                    content: "";
+                    background: url("../public/assets/img/check.png");
+                    background-size: contain;
+                    position: absolute;
+                    left: -58px;
+                    top: -4px;
+                    width: 40px;
+                    height: 40px;
+                }
+                .art_list_title {
+                    *{margin: 0;}
+                }
+                .art_choose_us_desc {
+                    font-weight: 100;
+                    margin-top: 10px;
+                    *{margin: 0;}
+                }
+            }
+        }
+    }
+}

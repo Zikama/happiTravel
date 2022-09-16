@@ -1,0 +1,24 @@
+{
+    "phoneNumbers": [
+        "+256 785988864","+256 758914876"
+    ],
+    "email": ["info@happitravelandlogistics.com", "manisa@happitravelandlogistics.com"],
+    "address": ["Ham Towers,Level 3, RM HT28", "Opp Makerere Main Gate, Kampala.","MM Plaza 3rd Floor Rm T20"],
+    "socialMedia": [
+        {
+            "name": "Facebook",
+            "url": "http://www.facebook.com/happitravelandlogistics",
+            "icon": "Facebook"
+        },
+        {
+            "name": "Twitter",
+            "url": "http://www.twitter.com/happitravelandlogistics",
+            "icon": "Twitter"
+        },
+        {
+            "name": "Instagram",
+            "url": "http://www.instagram.com/happitravelandlogistics",
+            "icon": "Instagram"
+        }
+    ]
+}

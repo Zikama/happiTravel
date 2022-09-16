@@ -1,0 +1,101 @@
+.art_quick_services {
+    margin-top: 3em;
+
+    .art_title {
+        text-align: center;
+
+    }
+
+    .art_services {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 1em;
+
+        .art_service_card {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            width: (100% / 3) - 2;
+            position: relative;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-top: 1em;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+            -webkit-transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+            -moz-transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+            -ms-transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+            -o-transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+            &:nth-of-type(even) {
+                margin: auto;
+                margin-top: 0;
+                -webkit-box-shadow: 0 0 16px 9px rgba(107, 156, 212, 0.2);
+                box-shadow: 0 0 16px 9px rgba(107, 156, 212, 0.2);
+                transform: scale(1.01);
+                -webkit-transform: scale(1.01);
+                -moz-transform: scale(1.01);
+                -ms-transform: scale(1.01);
+                -o-transform: scale(1.01);
+            }
+
+            &:hover {
+
+                -webkit-box-shadow: 0 0 16px 9px rgba(107, 156, 212, 0.2);
+                box-shadow: 0 0 16px 9px rgba(107, 156, 212, 0.2);
+                transform: scale(1.04);
+                -webkit-transform: scale(1.04);
+                -moz-transform: scale(1.04);
+                -ms-transform: scale(1.04);
+                -o-transform: scale(1.04);
+                z-index: 1;
+            }
+
+            .art_img_co {
+                width: 100%;
+                min-height: (100px * 2);
+            }
+
+            .art_service_content {
+                padding: 10px;
+
+                .art_service_title {
+                    transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+                    -webkit-transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+                    -moz-transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+                    -ms-transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+                    -o-transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+                    position: relative; 
+                    width: max-content;
+                    &::after {
+                        content: "";
+                        background: url("./../public/assets/img/check.png");
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        position: absolute;
+                        right: -23px;
+                        top: 7px;
+                        width: 15px;
+                        height: 15px;
+                    }
+
+                    &:hover {
+                        color: var(--primaryColor);
+                    }
+                }
+            }
+        }
+    }
+}
