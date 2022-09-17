@@ -1,6 +1,6 @@
 @import url("/public/assets/fonts/tahoma.ttf");
 @import "./abstracts/_vars";
-@import './abstracts/_media_query';
+@import './abstracts/_media_queries';
 
 html {
   body {
@@ -9,11 +9,28 @@ html {
     font-family: "Open Sans", sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     background-color: var(--bgColor);
     color: var(--tartieryColor);
+    margin-top: var(--navHeight);
+
+    @include mobile {
+      margin-top: 80px;
+    }
+
+    @include laptop {
+      margin-top: var(--navHeight);
+    }
 
     .art_title {
       font-family: Tahoma, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
         Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
         sans-serif;
+
+      // @include mobile {
+      //   text-align: center;
+      // }
+
+      // @include laptop {
+      //   text-align: left;
+      // }
 
       * {
         font-family: inherit;
@@ -25,6 +42,7 @@ html {
       border: none;
       padding: 1.05em;
       min-width: 10em;
+      min-height: 3.1rem;
       background-color: var(--primaryColor);
       -webkit-box-shadow: rgba(225, 103, 115, 0.49) 0px 5px 20px 0px;
       box-shadow: rgba(225, 103, 115, 0.49) 0px 5px 20px 0px;
@@ -37,7 +55,6 @@ html {
       -ms-transition: transform 2s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 2s cubic-bezier(0.075, 0.82, 0.165, 1);
       -o-transition: transform 2s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 2s cubic-bezier(0.075, 0.82, 0.165, 1);
       font-weight: 700;
-      min-height: 3.5rem;
 
       * {
         font-weight: inherit;
@@ -89,16 +106,33 @@ html {
 
 
     .art_nav {
-      position: relative;
+      position: absolute;
       width: 100%;
       top: 0;
       z-index: 10;
 
+      &.fixed {
+        position: fixed;
+        top: -52px;
+        box-shadow: 0px 1px 2px #c1d2da;
+
+        @include mobile {
+          top: 0;
+        }
+
+        @include laptop {
+          top: -52px;
+        }
+      }
 
       .art_top_intro {
         background: #192c4c;
         color: #fff;
         padding: 10px;
+        width: 100%;
+        // min-height: var(--minNavHeight);
+        // position: absolute;
+        // top: 0;
 
         .art_contacts {
           display: -webkit-box;
@@ -168,6 +202,14 @@ html {
         -ms-flex-pack: justify;
         justify-content: space-between;
         max-height: 90px;
+        width: 100%;
+        // position: absolute;
+        // top: var(--minNavHeight);
+        // &.fixed{
+        //   position: fixed;
+        //   top: 0;
+        //   box-shadow: 0px 1px 2px #c1d2da;
+        // }
 
         // padding: 0 20px;
         .art_bar_wrapper {
@@ -176,6 +218,18 @@ html {
           -ms-flex-pack: inherit;
           justify-content: inherit;
           height: 100%;
+        }
+
+        .art_menu_burger {
+          margin: auto 10px auto 0;
+
+          .art_burger_btn {
+            border: none;
+            outline: none;
+            background-color: rgba(0, 0, 0, 0);
+            vertical-align: bottom;
+            cursor: pointer;
+          }
         }
 
         .art_logo {
@@ -211,6 +265,14 @@ html {
               margin: 0;
               padding: 0;
               height: 100%;
+
+              @include mobile {
+                display: none;
+              }
+
+              @include laptop () {
+                display: inherit;
+              }
             }
 
             .art_menu_item {
@@ -352,15 +414,33 @@ html {
       width: 100%;
       position: relative;
       min-height: 65vh;
+
+      @include mobile {
+        min-height: 80vh;
+      }
+
+      @include laptop {
+        min-height: 65vh;
+      }
     }
 
     .art_wave_el {
       position: relative;
+      z-index: 5;
 
       .art_wave_co {
         position: absolute;
         bottom: -4px;
         width: 100%;
+        overflow: hidden;
+
+        @include mobile {
+          bottom: -5px;
+        }
+
+        @include laptop {
+          bottom: -4px;
+        }
 
         svg {
           width: 100%;
@@ -368,11 +448,53 @@ html {
 
         &.art_is_down {
           bottom: -84px;
+
+          @include mobile {
+            bottom: -83px;
+          }
+
+          @include laptop {
+            bottom: -84px;
+          }
         }
 
         &.art_is_top {
           top: -79px;
           bottom: auto;
+
+          @include mobile {
+            bottom: -83px;
+          }
+
+          @include laptop {
+            bottom: -84px;
+          }
+        }
+
+        &.art_is_foot {
+          top: -79px;
+
+          @include mobile {
+            top: -56px;
+            bottom: 0;
+
+            svg {
+              width: 148%;
+              left: -97px;
+              position: relative;
+            }
+          }
+
+          @include laptop {
+            top: -79px;
+            bottom: auto;
+
+            svg {
+              width: 100%;
+              left: 0px;
+              position: relative;
+            }
+          }
         }
       }
     }
@@ -383,13 +505,38 @@ html {
 
     .slick-arrow {
       z-index: 1;
+      // padding: 20px;
+      background-color: rgba(172, 172, 172, 0.4);
+      font-family: inherit;
+      opacity: 1;
+      width: 53px;
+      height: 53px;
+      line-height: 1.5;
+      border-radius: 5rem;
+      overflow: hidden;
+
+      &:hover {
+        background-color: #192c4c;
+        opacity: 1;
+
+      }
 
       &.slick-next {
         right: 33px;
+
+        &::before {
+          content: "";
+          display: none;
+        }
       }
 
       &.slick-prev {
         left: 33px;
+
+        &::before {
+          content: "";
+          display: none;
+        }
       }
     }
 
@@ -432,38 +579,83 @@ html {
       -webkit-box-shadow: inset 0 1px 1px 0px #333;
       box-shadow: inset 0 1px 1px 0px #333;
       height: 3.5rem;
-        padding: 0;
-        overflow: hidden;
-        border-radius: 1em;
+      padding: 0;
+      overflow: hidden;
+      border-radius: 1em;
 
       .art_input {
         padding: 10px 15px;
         outline: none;
         margin: 0;
         border: 0;
+        width: 100%;
         height: 100%;
         background: rgba(240, 248, 255, 0);
         color: inherit;
       }
     }
+
+    .art_development {
+      padding: 2rem 0;
+
+      .art_title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        text-align: center;
+        color: #3b5460;
+
+        * {
+          font-size: inherit;
+          font-weight: inherit;
+        }
+      }
+
+      .art_description {
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin-bottom: 2rem;
+        text-align: center;
+        color: #3b5460;
+
+        * {
+          font-size: inherit;
+          font-weight: inherit;
+        }
+      }
+
+      .art_dev-co {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 50%;
+        margin: 5rem auto;
+      }
+    }
+
     .art_show-small {
       display: none;
+
       @include mobile {
-          display: block;
+        display: block;
       }
+
       @include laptop () {
-          display: none;
+        display: none;
       }
-  }
-  .art_show-large {
+    }
+
+    .art_show-large {
       display: block;
+
       @include mobile {
-          display: none;
+        display: none;
       }
+
       @include laptop () {
-          display: block;
+        display: block;
       }
-  }
+    }
   }
 
 

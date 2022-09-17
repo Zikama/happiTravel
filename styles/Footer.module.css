@@ -34,6 +34,30 @@
 .art_sec_foot .art_foot_sec_co .art_foot_sec {
   width: 31.33333%;
   margin: 0 0% 0 2%;
+  overflow: hidden;
+  word-break: break-word;
+}
+
+@media screen and (min-width: 320px) {
+  .art_sec_foot .art_foot_sec_co .art_foot_sec {
+    width: 100%;
+    margin: 0 0 2.2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .art_sec_foot .art_foot_sec_co .art_foot_sec {
+    width: 31.33333%;
+    margin: 0 0 2.2rem;
+  }
+}
+
+.art_sec_foot .art_foot_sec_co .art_foot_sec .art_title {
+  text-align: left;
+}
+
+.art_sec_foot .art_foot_sec_co .art_foot_sec.art_foot_sec_links .art_title {
+  text-align: left;
 }
 
 .art_sec_foot .art_foot_sec_co .art_foot_sec.art_foot_sec_links .art_title * {

@@ -1,3 +1,4 @@
+@import './abstracts/_media_queries';
 .art_welcome {
 
     padding: 1em 0 1em;
@@ -19,6 +20,7 @@
         }
 
         .art_title {
+            text-align: center;
             * {
                 padding: 0%;
                 margin: 10px 0;
@@ -30,5 +32,9 @@
         text-align: center;
         width: 90%;
         margin: 0 auto;
+        @include mobile {
+            width: 100%;
+            text-align: left;
+        }
     }
 }

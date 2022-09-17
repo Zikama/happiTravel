@@ -90,7 +90,7 @@ export default function Footer() {
             <div className="art_foot_desc">
               <p>{`Happi Travel and Logistics is a legal company aiming travel to Europea countries for education, stay and visits.`}</p>
               <div className="art_contacts">
-                <div className="art_title">
+                <div className={styles["art_title"]+" art_title"}>
                   <h6>{`Reach out`}</h6>
                 </div>
 

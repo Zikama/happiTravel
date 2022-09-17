@@ -1,3 +1,5 @@
+@import './abstracts/_media_queries';
+
 .art_quick_services {
     margin-top: 3em;
 
@@ -16,6 +18,12 @@
         -ms-flex-pack: justify;
         justify-content: space-between;
         padding: 1em;
+        @include mobile {
+            padding: 0;
+        }
+        @include laptop {
+            padding: 1em;
+        }
 
         .art_service_card {
             display: -webkit-box;
@@ -39,29 +47,41 @@
             -ms-transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
             -o-transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
 
-            &:nth-of-type(even) {
-                margin: auto;
-                margin-top: 0;
-                -webkit-box-shadow: 0 0 16px 9px rgba(107, 156, 212, 0.2);
-                box-shadow: 0 0 16px 9px rgba(107, 156, 212, 0.2);
-                transform: scale(1.01);
-                -webkit-transform: scale(1.01);
-                -moz-transform: scale(1.01);
-                -ms-transform: scale(1.01);
-                -o-transform: scale(1.01);
+            @include mobile {
+                width: (100% / 1) - 0;
+                box-shadow: none;
+                margin-top: 1.5em;
             }
 
-            &:hover {
+            @include laptop {
+                width: (100% / 3) - 2;
+                margin-top: 1em;
 
-                -webkit-box-shadow: 0 0 16px 9px rgba(107, 156, 212, 0.2);
-                box-shadow: 0 0 16px 9px rgba(107, 156, 212, 0.2);
-                transform: scale(1.04);
-                -webkit-transform: scale(1.04);
-                -moz-transform: scale(1.04);
-                -ms-transform: scale(1.04);
-                -o-transform: scale(1.04);
-                z-index: 1;
+                &:hover {
+                    -webkit-box-shadow: 0 0 16px 9px rgba(107, 156, 212, 0.2);
+                    box-shadow: 0 0 16px 9px rgba(107, 156, 212, 0.2);
+                    transform: scale(1.04);
+                    -webkit-transform: scale(1.04);
+                    -moz-transform: scale(1.04);
+                    -ms-transform: scale(1.04);
+                    -o-transform: scale(1.04);
+                    z-index: 1;
+                }
+
+                &:nth-of-type(even) {
+                    margin: auto;
+                    margin-top: 0;
+                    -webkit-box-shadow: 0 0 16px 9px rgba(107, 156, 212, 0.2);
+                    box-shadow: 0 0 16px 9px rgba(107, 156, 212, 0.2);
+                    transform: scale(1.01);
+                    -webkit-transform: scale(1.01);
+                    -moz-transform: scale(1.01);
+                    -ms-transform: scale(1.01);
+                    -o-transform: scale(1.01);
+                }
             }
+
+
 
             .art_img_co {
                 width: 100%;
@@ -77,8 +97,9 @@
                     -moz-transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
                     -ms-transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
                     -o-transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
-                    position: relative; 
+                    position: relative;
                     width: max-content;
+
                     &::after {
                         content: "";
                         background: url("./../public/assets/img/check.png");

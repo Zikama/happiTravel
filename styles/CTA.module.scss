@@ -1,3 +1,5 @@
+@import './abstracts/_media_queries';
+
 .art_cta {
     position: relative;
     z-index: 3;
@@ -34,22 +36,63 @@
             display: flex;
             align-items: center;
             justify-content: space-around;
+            flex-direction: row;
+
+            @include mobile {
+                flex-direction: column;
+            }
+
+            @include laptop {
+                flex-direction: row;
+            }
 
             .art_cta_header {
                 display: flex;
                 align-items: center;
+                flex-direction: row;
+
+                @include mobile {
+                    flex-direction: column;
+                }
+
+                @include laptop {
+                    flex-direction: row;
+                }
 
                 .art_cta_description {
                     width: 68%;
                     margin-left: 20px;
                     color: #fff;
 
+                    @include mobile {
+                        width: 100%;
+                        text-align: center;
+                        margin: 0;
+                        margin-bottom: 20px;
+                    }
+
+                    @include laptop {
+                        width: 68%;
+                        text-align: left;
+                        margin-left: 20px;
+                    }
+
                     .art_cta_desc_title {
+                        margin-bottom: 5px;
+
                         * {
-                            margin: 0
+                            margin: 0;
                         }
 
-                        margin-bottom: 5px;
+                        @include mobile {
+                            margin: 10px 0;
+                        }
+
+                        @include laptop {
+                            margin: 0;
+                            margin-bottom: 5px;
+                        }
+
                     }
 
                     .art_cta_desc_content {
@@ -63,14 +106,45 @@
                 }
             }
         }
-        .art_cta_action{
 
-        .art_cta_actionBtn {
+        .art_cta_action {
+            margin: auto;
 
-            min-width: 115px;
-            background-color: #fff;
-            color: var(--primaryColor);
-        }}
+            @include mobile {
+                min-width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            @include laptop {
+                min-width: auto;
+                display: block;
+            }
+
+            a {
+                margin: auto;
+                width: 100%;
+                display: inherit;
+                justify-content: inherit;
+                align-items: inherit;
+            }
+
+            .art_cta_actionBtn {
+
+                min-width: 115px;
+                background-color: #fff;
+                color: var(--primaryColor);
+
+                @include mobile {
+                    min-width: 80%;
+                }
+
+                @include laptop {
+                    min-width: 115px;
+                }
+            }
+        }
 
 
     }

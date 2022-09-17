@@ -53,12 +53,14 @@ export default function Home() {
           <AllServices />
         </Section>
         <Section className={styles["art_sec_news"]}>
-          <LatestNews />
-          <button className={styles["art_sec_news_btn"]}>
-            <span className={styles["art_sec_news_btn_text"]}>
-            {`View all`} 
-            </span><RightArrow />
-          </button>
+          <div className={styles["art_custom_container"]}>
+            <LatestNews />
+            <button className={styles["art_sec_news_btn"]}>
+              <span className={styles["art_sec_news_btn_text"]}>
+              {`View all`} 
+              </span><RightArrow />
+            </button>
+          </div>
         </Section>
         <Section wave={<Wave top={true} color={"#fff"} />} className={styles["art_sec_reviews"]}>
           <Reviews />

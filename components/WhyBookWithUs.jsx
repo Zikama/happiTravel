@@ -6,10 +6,10 @@ import Button from "./Button";
 
 export default function WhyBookWithUs() {
   return (
-    <section className={styles["art_sec"] + " art_wave_el"}>
+    <section className={styles["art_sec"]}>
       <div className="container">
         <div className={styles["art_choose_us_co"]}>
-          <div className="art_title">
+          <div className={styles["art_title"]+" art_title"}>
             <h4>{`Why book with us?`}</h4>
           </div>
           <div className={styles["art_desc"]}>

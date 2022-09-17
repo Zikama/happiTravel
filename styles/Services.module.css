@@ -18,6 +18,18 @@
   padding: 1em;
 }
 
+@media screen and (min-width: 320px) {
+  .art_quick_services .art_services {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .art_quick_services .art_services {
+    padding: 1em;
+  }
+}
+
 .art_quick_services .art_services .art_service_card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -41,27 +53,40 @@
   -o-transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.art_quick_services .art_services .art_service_card:nth-of-type(even) {
-  margin: auto;
-  margin-top: 0;
-  -webkit-box-shadow: 0 0 16px 9px rgba(107, 156, 212, 0.2);
-  box-shadow: 0 0 16px 9px rgba(107, 156, 212, 0.2);
-  transform: scale(1.01);
-  -webkit-transform: scale(1.01);
-  -moz-transform: scale(1.01);
-  -ms-transform: scale(1.01);
-  -o-transform: scale(1.01);
+@media screen and (min-width: 320px) {
+  .art_quick_services .art_services .art_service_card {
+    width: 100%;
+    box-shadow: none;
+    margin-top: 1.5em;
+  }
 }
 
-.art_quick_services .art_services .art_service_card:hover {
-  -webkit-box-shadow: 0 0 16px 9px rgba(107, 156, 212, 0.2);
-  box-shadow: 0 0 16px 9px rgba(107, 156, 212, 0.2);
-  transform: scale(1.04);
-  -webkit-transform: scale(1.04);
-  -moz-transform: scale(1.04);
-  -ms-transform: scale(1.04);
-  -o-transform: scale(1.04);
-  z-index: 1;
+@media screen and (min-width: 1024px) {
+  .art_quick_services .art_services .art_service_card {
+    width: 31.33333%;
+    margin-top: 1em;
+  }
+  .art_quick_services .art_services .art_service_card:hover {
+    -webkit-box-shadow: 0 0 16px 9px rgba(107, 156, 212, 0.2);
+    box-shadow: 0 0 16px 9px rgba(107, 156, 212, 0.2);
+    transform: scale(1.04);
+    -webkit-transform: scale(1.04);
+    -moz-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+    -o-transform: scale(1.04);
+    z-index: 1;
+  }
+  .art_quick_services .art_services .art_service_card:nth-of-type(even) {
+    margin: auto;
+    margin-top: 0;
+    -webkit-box-shadow: 0 0 16px 9px rgba(107, 156, 212, 0.2);
+    box-shadow: 0 0 16px 9px rgba(107, 156, 212, 0.2);
+    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    -moz-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    -o-transform: scale(1.01);
+  }
 }
 
 .art_quick_services .art_services .art_service_card .art_img_co {

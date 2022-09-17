@@ -37,8 +37,38 @@
   text-align: center;
 }
 
+@media screen and (min-width: 320px) {
+  .header .art_slides_co .art_img_co .art_slide_content {
+    margin: auto auto auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header .art_slides_co .art_img_co .art_slide_content {
+    margin: auto auto 3rem;
+  }
+}
+
+.header .art_slides_co .art_img_co .art_slide_content .art_slide_title {
+  font-size: 4.2rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 320px) {
+  .header .art_slides_co .art_img_co .art_slide_content .art_slide_title {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header .art_slides_co .art_img_co .art_slide_content .art_slide_title {
+    font-size: 4.2rem;
+  }
+}
+
 .header .art_slides_co .art_img_co .art_slide_content .art_slide_title * {
   margin-bottom: 0;
+  font-size: inherit;
 }
 
 .header .art_slides_co .art_img_co .art_slide_content .art_slide_content_subtitle {

@@ -2,6 +2,8 @@ import React from 'react';
 import styles from './../styles/Reviews.module.css';
 import ReviewsCard from './ReviewsCard';
 import Slider from 'react-slick';
+import Next from "../public/assets/img/chevron-right.svg"
+import Prev from "../public/assets/img/chevron-left.svg"
 
 export default function Reviews() {
     const quickReviews = [
@@ -55,12 +57,36 @@ export default function Reviews() {
         className: styles["art_reviews"],
         nextArrow: '',
         prevArrow: '',
+        responsive: [{
+            breakpoint: 480,
+            settings: {
+                arrows: false,
+                slidesToShow: 1,
+            }
+        }, {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                slidesToShow: 2,
+                // autoplay: !true,
+            }
+        }, {
+            breakpoint: 1204,
+            settings: {
+                arrows: true,
+                slidesToShow: 3,
+                // autoplay: !true,
+
+            }
+        }],
         onInit: function(settings) {
         //   console.log(settings);
         },
         beforeChange: function(settings) {
           // console.log(settings);
         },
+        nextArrow:  (<button>{<Next style={{color: "#fff"}} />}</button>),
+        prevArrow: <button>{<Prev style={{color: "#fff"}} />}</button>,
       };
   return (
     <div className={styles["art_quick_reviews"]+ " art_quick_reviews"}>
