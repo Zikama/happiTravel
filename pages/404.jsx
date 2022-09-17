@@ -38,7 +38,7 @@ export default function FourOhFour() {
             </Link>
         </div>
         <div className="art_dev-co" style={{margin: 0, width: "auto"}}>
-            <A404 style={{color: "var(--primaryColor)"}}/>
+            <A404 style={{color: "var(--primaryColor)", width: '100%', height: '400px'}}/>
         </div>
     </div>
 </div>
