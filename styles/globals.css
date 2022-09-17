@@ -215,6 +215,18 @@ html body .art_nav .art_bar {
   width: 100%;
 }
 
+@media screen and (min-width: 320px) {
+  html body .art_nav .art_bar {
+    height: 67px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  html body .art_nav .art_bar {
+    height: 80px;
+  }
+}
+
 html body .art_nav .art_bar .art_bar_wrapper {
   display: inherit;
   -webkit-box-pack: inherit;
