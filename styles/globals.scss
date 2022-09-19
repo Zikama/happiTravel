@@ -217,7 +217,7 @@ html {
           top: 0;
         }
         @include laptop {
-          position: relative;
+          position: initial;
           top: auto;
           box-shadow: none;
           height: 80px;

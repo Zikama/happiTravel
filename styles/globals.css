@@ -226,7 +226,7 @@ html body .art_nav .art_bar {
 
 @media only screen and (min-width: 1024px) {
   html body .art_nav .art_bar {
-    position: relative;
+    position: initial;
     top: auto;
     box-shadow: none;
     height: 80px;
