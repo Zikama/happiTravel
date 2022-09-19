@@ -212,8 +212,12 @@ html {
         // }
         @include mobile {
           height: 67px;
+          position: fixed;
+          top: 0;
         }
         @include laptop {
+          position: relative;
+          top: auto;
           height: 80px;
         }
 

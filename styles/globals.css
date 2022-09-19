@@ -218,11 +218,15 @@ html body .art_nav .art_bar {
 @media screen and (min-width: 320px) {
   html body .art_nav .art_bar {
     height: 67px;
+    position: fixed;
+    top: 0;
   }
 }
 
 @media screen and (min-width: 1024px) {
   html body .art_nav .art_bar {
+    position: relative;
+    top: auto;
     height: 80px;
   }
 }
