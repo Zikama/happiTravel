@@ -437,7 +437,7 @@ html body .art_img_co {
 
 @media screen and (min-width: 320px) {
   html body .art_img_co {
-    min-height: 80vh;
+    min-height: 70vh;
   }
 }
 
