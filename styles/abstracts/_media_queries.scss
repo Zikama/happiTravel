@@ -11,31 +11,37 @@
 }
 
 @mixin mobile-large {
-    @media screen and (min-width: 425px) {
+    @media only screen and (min-width: 425px) {
         @content;
     }
 }
 
 @mixin tablet {
-    @media screen and (min-width: 768px) {
+    @media only  screen and (min-width: 768px) {
         @content;
     }
 }
 
 @mixin laptop {
-    @media screen and (min-width: 1024px) {
+    @media only  screen and (min-width: 1024px) {
         @content;
     }
 }
 
 @mixin laptop-large {
-    @media screen and (min-width: 1440px) {
+    @media only  screen and (min-width: 1440px) {
         @content;
     }
 }
 
 @mixin laptop-xlarge {
-    @media screen and (min-width: 2560px) {
+    @media only  screen and (min-width: 2560px) {
+        @content;
+    }
+}
+
+@mixin custom ($params) {
+    @media only  screen and ($params) {
         @content;
     }
 }
