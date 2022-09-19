@@ -30,7 +30,7 @@ html body {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   html body {
     margin-top: var(--navHeight);
   }
@@ -132,7 +132,7 @@ html body .art_nav.fixed {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   html body .art_nav.fixed {
     top: -52px;
   }
@@ -219,14 +219,16 @@ html body .art_nav .art_bar {
   html body .art_nav .art_bar {
     height: 67px;
     position: fixed;
+    box-shadow: 0px 1px 2px #c1d2da;
     top: 0;
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   html body .art_nav .art_bar {
     position: relative;
     top: auto;
+    box-shadow: none;
     height: 80px;
   }
 }
@@ -294,7 +296,7 @@ html body .art_nav .art_bar .art_menu .art_menu_wrapper > ul {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   html body .art_nav .art_bar .art_menu .art_menu_wrapper > ul {
     display: inherit;
   }
@@ -439,7 +441,7 @@ html body .art_img_co {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   html body .art_img_co {
     min-height: 65vh;
   }
@@ -463,7 +465,7 @@ html body .art_wave_el .art_wave_co {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   html body .art_wave_el .art_wave_co {
     bottom: -4px;
   }
@@ -483,7 +485,7 @@ html body .art_wave_el .art_wave_co.art_is_down {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   html body .art_wave_el .art_wave_co.art_is_down {
     bottom: -84px;
   }
@@ -500,7 +502,7 @@ html body .art_wave_el .art_wave_co.art_is_top {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   html body .art_wave_el .art_wave_co.art_is_top {
     bottom: -84px;
   }
@@ -522,7 +524,7 @@ html body .art_wave_el .art_wave_co.art_is_foot {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   html body .art_wave_el .art_wave_co.art_is_foot {
     top: -79px;
     bottom: auto;
@@ -669,7 +671,7 @@ html body .art_show-small {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   html body .art_show-small {
     display: none;
   }
@@ -685,7 +687,7 @@ html body .art_show-large {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   html body .art_show-large {
     display: block;
   }

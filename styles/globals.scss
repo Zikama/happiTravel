@@ -213,11 +213,13 @@ html {
         @include mobile {
           height: 67px;
           position: fixed;
+          box-shadow: 0px 1px 2px #c1d2da;
           top: 0;
         }
         @include laptop {
           position: relative;
           top: auto;
+          box-shadow: none;
           height: 80px;
         }
 
