@@ -4,7 +4,7 @@
     background: url("../public/assets/img/brazcom/brazcon-bg1.png");
     background-attachment: fixed;
     background-size: cover;
-    min-height: 80vh;
+    // min-height: 80vh;
     padding: 0;
     margin: 0;
     position: relative;
@@ -13,11 +13,13 @@
     flex-wrap: wrap;
 
     @include mobile {
-        min-height: 130vh;
+        // min-height: 130vh;
+        padding: 4rem 0;
     }
 
     @include laptop {
-        min-height: 80vh;
+        // min-height: 80vh;
+        padding: (4rem * 2) 0;
     }
 
     &::before {
@@ -25,14 +27,15 @@
         position: absolute;
         width: 100%;
         height: 100%;
+
         @include mobile {
             background: linear-gradient(0deg, rgba(2, 3, 20, 0.71), transparent);
         }
-    
+
         @include laptop {
             background: transparent;
         }
-    
+
         // background: linear-gradient(0deg, rgba(2, 3, 20, 0.71), transparent);
     }
 
@@ -62,6 +65,7 @@
                 font-weight: 100;
             }
         }
+
         .art_title {
             text-align: center;
             width: 100%;

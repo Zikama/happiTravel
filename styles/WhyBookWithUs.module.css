@@ -2,7 +2,6 @@
   background: url("../public/assets/img/brazcom/brazcon-bg1.png");
   background-attachment: fixed;
   background-size: cover;
-  min-height: 80vh;
   padding: 0;
   margin: 0;
   position: relative;
@@ -13,13 +12,13 @@
 
 @media screen and (min-width: 320px) {
   .art_sec {
-    min-height: 130vh;
+    padding: 4rem 0;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .art_sec {
-    min-height: 80vh;
+    padding: 8rem 0;
   }
 }
 

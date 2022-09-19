@@ -231,7 +231,15 @@ body {
 
     .art_sec_reviews {
       background-color: #fff;
-      padding-bottom: 10em;
+      padding-bottom: 10rem;
+      @include mobile {
+        padding-bottom: 5rem;
+
+      }
+      @include laptop {
+        padding-bottom: 10rem;
+
+      }
     }
   }
 }

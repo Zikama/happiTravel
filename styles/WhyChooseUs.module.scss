@@ -4,17 +4,17 @@
     background: url("../public/assets/img/brazcom/Uganda-Airlines-Economy-Class-2.jpeg");
     background-attachment: fixed;
     background-size: cover;
-    min-height: 80vh;
+    // min-height: 80vh;
     padding: 0;
     margin: 3em 0 0;
 
-    @include mobile {
-        min-height: 110vh;
-    }
+    // @include mobile {
+    //     min-height: 110vh;
+    // }
 
-    @include laptop {
-        min-height: 80vh;
-    }
+    // @include laptop {
+    //     min-height: 80vh;
+    // }
 
     .art_choose_us_co {
         background-color: #020314;
@@ -28,13 +28,13 @@
 
         @include mobile {
             width: 100%;
-            padding-top: 2rem;
+            padding: 2rem 10px 6rem;
             background-color: rgba(2, 3, 20, 0.745);
         }
 
         @include laptop {
             width: (100% / 2);
-            padding-top: 20px;
+            padding: 20px 10px 8rem;
             background-color: #020314;
         }
 

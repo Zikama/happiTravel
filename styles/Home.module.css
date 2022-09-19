@@ -227,5 +227,17 @@ body .main .art_sec_news .art_sec_news_btn .art_sec_news_btn_text {
 
 body .main .art_sec_reviews {
   background-color: #fff;
-  padding-bottom: 10em;
+  padding-bottom: 10rem;
+}
+
+@media screen and (min-width: 320px) {
+  body .main .art_sec_reviews {
+    padding-bottom: 5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body .main .art_sec_reviews {
+    padding-bottom: 10rem;
+  }
 }

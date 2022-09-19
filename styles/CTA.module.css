@@ -71,6 +71,7 @@
   .art_cta .art_call_to_action .art_cta_content .art_cta_header .art_cta_description {
     width: 68%;
     text-align: left;
+    margin: 0;
     margin-left: 20px;
   }
 }
