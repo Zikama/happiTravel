@@ -429,6 +429,18 @@ html body .art_nav .art_bar .art_menu .art_menu_wrapper .art_menu_item .art_menu
   color: var(--primaryColor);
 }
 
+@media only screen and (max-width: 375px) {
+  html body .art_nav .art_nav_btn {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 393px) {
+  html body .art_nav .art_nav_btn {
+    display: none;
+  }
+}
+
 html body .art_img_co {
   width: 100%;
   position: relative;

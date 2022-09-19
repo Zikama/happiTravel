@@ -420,6 +420,14 @@ html {
           }
         }
       }
+      .art_nav_btn {
+        @include custom-max ("max-width:375px") {
+          display: none;
+        }
+        @include custom-max ("max-width: 393px") {
+          display: none;
+        }
+      }
     }
 
     .art_img_co {

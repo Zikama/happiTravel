@@ -40,8 +40,14 @@
     }
 }
 
-@mixin custom ($params) {
-    @media only  screen and ($params) {
+@mixin custom-max ($params) {
+    @media only  screen and (#{$params}) {
         @content;
     }
 }
+@mixin sticky-position {
+    position: fixed;
+    @supports (position: sticky) {
+      position: sticky;
+    }
+  }

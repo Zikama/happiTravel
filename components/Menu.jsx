@@ -75,7 +75,7 @@ export function Menu() {
                 })}
             </ul>
             <Link href={`/appointment`}>
-                <a>
+                <a className="art_nav_btn">
                     <Button text={`Appointment`} />
                 </a>
             </Link>
