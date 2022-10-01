@@ -30,7 +30,7 @@ export default function Services() {
   return (
     <div className={styles["art_quick_services"]}>
         <div className={styles["art_title"]+" art_title"}>
-            <h4>{`Our Travelling Services`}</h4>
+            <h4>{`Our Logistics Services`}</h4>
         </div>
         <div className={styles["art_services"]}>
             {

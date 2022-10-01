@@ -40,6 +40,9 @@ export default function Home() {
         <Section>
           <Services />
         </Section>
+        <Section className={styles["art_sec_services_log"]}>
+          <Services />
+        </Section>
         <WhyChooseUs />
         <CTA
           title={`Book with us today!`}

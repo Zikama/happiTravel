@@ -194,7 +194,7 @@ body .main .art_sec_news .art_sec_news_btn:hover {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   body .main .art_sec_news .art_sec_news_btn {
     width: 95px;
     height: 95px;
@@ -218,7 +218,7 @@ body .main .art_sec_news .art_sec_news_btn .art_sec_news_btn_text {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   body .main .art_sec_news .art_sec_news_btn .art_sec_news_btn_text {
     width: 30px;
     margin-right: 5px;
@@ -236,8 +236,13 @@ body .main .art_sec_reviews {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   body .main .art_sec_reviews {
     padding-bottom: 10rem;
   }
+}
+
+body .main .art_sec_services_log {
+  background-color: #fff;
+  padding-bottom: 10rem;
 }
