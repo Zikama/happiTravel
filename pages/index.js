@@ -15,6 +15,7 @@ import LatestNews from "../components/LatestNews";
 import Reviews from "../components/Reviews";
 import RightArrow from "../public/assets/img/chevron-right.svg";
 import Footer from '../components/Footer';
+import ServicesLogistics from '../components/ServicesLogistics';
 
 export default function Home() {
   return (
@@ -41,7 +42,7 @@ export default function Home() {
           <Services />
         </Section>
         <Section className={styles["art_sec_services_log"]}>
-          <Services />
+          <ServicesLogistics />
         </Section>
         <WhyChooseUs />
         <CTA

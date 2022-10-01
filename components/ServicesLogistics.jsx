@@ -4,7 +4,7 @@ import React from 'react'
 import styles from './../styles/Services.module.css'
 import ServiceCard from './ServiceCard';
 
-export default function Services() {
+export default function ServicesLogistics() {
     const quickServices = [
         {
             name: "Visa Application",
